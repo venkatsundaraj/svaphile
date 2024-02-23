@@ -1,11 +1,10 @@
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import { Raleway } from "next/font/google"
-import "./globals.css"
 import { cn } from "@/lib/utils"
+import type { Metadata } from "next"
+import { Inter, Raleway } from "next/font/google"
+import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--paragraph" })
-const roboto = Raleway({
+const raleway = Raleway({
   subsets: ["latin"],
   variable: "--heading",
 })
@@ -24,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          `${inter.variable} ${roboto.variable}`,
+          `${inter.variable} ${raleway.variable}`,
           "antialiased grainy font-sans min-h-screen w-screen overflow-x-hidden relative"
         )}
       >

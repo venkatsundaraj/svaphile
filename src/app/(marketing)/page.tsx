@@ -11,7 +11,7 @@ import {
 export default function Home() {
   return (
     <main className="min-h-screen w-screen overflow-x-hidden">
-      <section className="bg-primary flex items-center justify-center min-h-screen w-full text-white ">
+      <section className="bg-primary flex items-center justify-center min-h-screen w-full text-white p-10">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="flex items-start justify-center flex-col gap-4">
@@ -28,10 +28,12 @@ export default function Home() {
       </section>
 
       <section className="min-h-screen w-screen overflow-x-hidden bg-background flex items-center py-10">
-        <div className="container grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="container grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10">
           <Card className="bg-border rounded-md">
             <CardHeader>
-              <CardTitle>Access India's digital health ecosystem</CardTitle>
+              <CardTitle>
+                Access India&apos;s digital health ecosystem
+              </CardTitle>
               <CardDescription>with your ABHA address</CardDescription>
             </CardHeader>
             <CardContent>
@@ -45,9 +47,6 @@ export default function Home() {
                 }}
                 width="300"
               />
-              <Button className="bg-[#007bff] text-white">
-                CREATE ABHA NOW →
-              </Button>
             </CardContent>
           </Card>
           <Card className="bg-border rounded-md">
@@ -68,9 +67,6 @@ export default function Home() {
                 }}
                 width="300"
               />
-              <Button className="bg-[#007bff] text-white">
-                UPLOAD A RECORD →
-              </Button>
             </CardContent>
           </Card>
           <Card className="bg-border rounded-md">
@@ -91,11 +87,24 @@ export default function Home() {
                 }}
                 width="300"
               />
-              <Button className="bg-[#007bff] text-white">
-                DOWNLOAD THE APP →
-              </Button>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      <section className="bg-primary flex items-center justify-center w-full text-white p-10">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="flex items-start justify-center flex-col gap-4">
+              <h1 className="text-2xl md:text-5xl text-heading font-bold">
+                Open your health account
+              </h1>
+              <p className="text-2xl text-paragraph my-6">
+                Trusted by more than 3Cr Indians
+              </p>
+            </div>
+            <div className="flex flex-col w-full min-h-48 bg-border rounded-md"></div>
+          </div>
         </div>
       </section>
     </main>
